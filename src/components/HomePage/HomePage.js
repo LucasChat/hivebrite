@@ -6,6 +6,7 @@ import { changeCitiesBatchIndex } from '../../actions';
 import {
   getSelectedCitiesBatch,
 } from '../../selectors/slct_get_cities_batch/slct_get_cities_batch';
+import { batchCitiesSize } from '../../utils/const';
 
 import CitiesContainer from '../CitiesContainer/CitiesContainer';
 
@@ -15,7 +16,7 @@ const HomePage = ({ cities, citiesBatch, citiesBatchIndex, onChangeCitiesBatchIn
   <div className="home_page">
     <CitiesContainer
       cities={citiesBatch}
-      citiesBatchIndexMax={(cities.length / 50)}
+      citiesBatchIndexMax={(cities.length / batchCitiesSize)}
       citiesBatchIndex={citiesBatchIndex}
       onChangeCitiesBatchIndex={onChangeCitiesBatchIndex}
     />

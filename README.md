@@ -12,7 +12,8 @@ A ready-to-use starter for a front application based on React and Redux with Web
 
 ### Todo :
 1.  Change in src/index.js the keyPrefix for the localhost
-1.  Change in package.json the name of your app
+2.  Change in package.json the name of your app
+3.  Change in public/html your title
 
 ### Inclu :
 * React
