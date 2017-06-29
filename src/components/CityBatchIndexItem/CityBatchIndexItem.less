@@ -1,0 +1,23 @@
+@import "../../utils/style/_colors.less";
+@import "../../utils/style/_fonts.less";
+
+.city_item {
+  width: 100%;
+
+  margin-bottom: 5px;
+  padding: 20px 15px;
+
+  border: 1px @c-blue-azure solid;
+
+  .city_item__name {
+    &:extend(.tile__title);
+  }
+
+  .city_item__population {
+    &:extend(.tile__content);
+    margin-bottom: 5px;
+  }
+  .city_item__state {
+    &:extend(.tile__content);
+  }
+}
