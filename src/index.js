@@ -23,8 +23,6 @@ const persistConf = {
   keyPrefix: 'HIVEBRITE_TEST__',
 };
 
-// browserHistory.listen((location) => store.dispatch(changeLocation(location)));
-
 persistStore(store, persistConf);
 
 ReactDOM.render(

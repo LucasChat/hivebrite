@@ -23,18 +23,25 @@ const CitiesContainer = ({
       citiesBatchIndex={citiesBatchIndex}
       citiesBatchIndexMax={citiesBatchIndexMax}
     />
-    {cities.map(city =>
-      <CityItem
-        city={city}
-        key={city.rank}
-        hoveredCity={hoveredCity}
-        onSelectCity={onSelectCity}
-        onUnselectCity={onUnselectCity}
-        onHoverCity={onHoverCity}
-        onLeaveHoverCity={onLeaveHoverCity}
-        isSelected={selectedCity === city.rank}
-      />
-    )}
+    <div className="city_item__container">
+      {cities.map(city =>
+        <CityItem
+          city={city}
+          key={city.rank}
+          hoveredCity={hoveredCity}
+          onSelectCity={onSelectCity}
+          onUnselectCity={onUnselectCity}
+          onHoverCity={onHoverCity}
+          onLeaveHoverCity={onLeaveHoverCity}
+          isSelected={selectedCity === city.rank}
+        />
+      )}
+    </div>
+    <CityBatchIndexContainer
+      onChangeCitiesBatchIndex={onChangeCitiesBatchIndex}
+      citiesBatchIndex={citiesBatchIndex}
+      citiesBatchIndexMax={citiesBatchIndexMax}
+    />
   </div>
 );
 

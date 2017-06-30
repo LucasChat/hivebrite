@@ -11,7 +11,7 @@ const sortSelectedCitiesBatch = (getAllCitiesParam, getCitiesBatchIndexParam) =>
 );
 
 /**
- * Get the edited zone in template (nested arrayà
+ * Get the selected cities by the batch index
  */
 export const getSelectedCitiesBatch = createSelector(
   getAllCities,

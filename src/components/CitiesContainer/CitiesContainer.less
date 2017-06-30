@@ -7,4 +7,22 @@
 
   position: fixed;
   overflow-y: scroll;
+
+  .city_item__container {
+    & > :last-child {
+      border-bottom: 1px @c-blue-azure solid;
+    }
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .cities_container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .cities_container {
+    width: 100%;
+  }
 }

@@ -1,5 +1,5 @@
-# starter react
-A ready-to-use starter for a front application based on React and Redux with Webpack
+# Hivebrite test
+A training test from Hivebrite ! An application based on React and Redux to get and display a list of cities
 
 ### Run :
 1. run `npm install`
@@ -8,27 +8,19 @@ A ready-to-use starter for a front application based on React and Redux with Web
 
 ### Build the app for prod
 1. run `npm build`
-2. just put your /build folder online !
-
-### Todo :
-1.  Change in src/index.js the keyPrefix for the localhost
-2.  Change in package.json the name of your app
-3.  Change in public/html your title
+2. just put your /build folder online
 
 ### Inclu :
+* Webpack bundler
+* ES6
 * React
 * React-Router
-* React-dropzone
+* React-leaflet
 * Redux
 * Redux-thunk
 * Redux-promise-middleware
-* Reselect - Selector!
+* Reselect - Selector
 * Lodash
-* Less or Sass
-* uuid
+* Less
 * ESlinter maison
 * Axios
-
-Reset CSS depuis App
-Routeur prêt
-redux-promise-middleware

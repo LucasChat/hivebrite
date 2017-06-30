@@ -5,7 +5,6 @@ import { mapInitialPosition, mapInitialZoom } from '../../utils/const';
 
 import './MapContainer.less';
 
-
 const MapContainer = ({
   cities,
   selectedCity,
@@ -33,6 +32,7 @@ const MapContainer = ({
           <span>
             <div className="map_container__popup__name">{city.city}</div>
             <div className="map_container__popup__population">Population: {city.population}</div>
+            <div className="map_container__popup__state">State: {city.state}</div>
           </span>
         </Popup>
       </ExtendedMarker> :

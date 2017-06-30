@@ -17,6 +17,7 @@ const CityItem = ({
     'city_item',
     concat(isSelected && 'selected')
   );
+  const url = `http://www.google.com/maps/place/${city.latitude},${city.longitude}`;
   return (
     <div
       className={cityItemClass}
@@ -38,6 +39,13 @@ const CityItem = ({
       <div className="city_item__rank">
         Number {get(city, ['rank'])} of the most populous cities
       </div>
+      <a
+        target="_blank"
+        href={url}
+        className="city_item__google_map"
+      >
+        Watch on Google Map
+      </a>
     </div>
   );
 };
