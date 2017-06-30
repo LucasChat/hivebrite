@@ -10,7 +10,7 @@ A training test from Hivebrite ! An application based on React and Redux to get 
 1. run `npm build`
 2. just put your /build folder online
 
-### Inclu :
+### Included :
 * Webpack bundler
 * ES6
 * React
