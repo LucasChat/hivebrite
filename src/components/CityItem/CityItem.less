@@ -4,11 +4,17 @@
 .city_item {
   width: 100%;
 
-  margin-bottom: 5px;
+  //margin-bottom: 5px;
   padding: 20px 15px;
 
   border-top: 1px @c-blue-azure solid;
-  border-bottom: 1px @c-blue-azure solid;
+  //border-bottom: 1px @c-blue-azure solid;
+
+  cursor: pointer;
+
+  &--selected {
+    background-color: @c-grey-light;
+  }
 
   .city_item__name {
     &:extend(.tile__title);
@@ -23,6 +29,12 @@
   }
   .city_item__state {
     &:extend(.tile__content);
+    margin-bottom: 5px;
     color: purple;
+  }
+
+  .city_item__rank {
+    &:extend(.tile__content);
+    color: @c-blue-azure;
   }
 }

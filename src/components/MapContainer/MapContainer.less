@@ -1,0 +1,32 @@
+@import "../../utils/style/_colors.less";
+@import "../../utils/style/_fonts.less";
+
+.map_container {
+  height: 100vh;
+  width: 82%;
+
+  margin-left: 18%;
+
+  .map_container__popup__name {
+    &:extend(.tile__title);
+    margin-bottom: 5px;
+  }
+
+  .leaflet-marker-pane {
+    .leaflet-marker-icon {
+      transition: all 0.1s ease 0s;
+    }
+
+    .leaflet-marker-draggable {
+      width: 30px !important;
+      height: 46px !important;
+
+      margin-top: -48px !important;
+      margin-left: -15px !important;
+
+      transition: all 0.1s ease 0s;
+    }
+  }
+}
+
+
